@@ -1,11 +1,7 @@
-import { GlobalStyles } from "@/styles/GlobalStyles";
-import Home from "@/pages/home";
+import React from "react";
 
-export default function Page() {
-  return (
-    <>
-      <GlobalStyles></GlobalStyles>
-      <Home></Home>
-    </>
-  );
-}
+const App: React.FC = () => {
+  return <div />;
+};
+
+export default App;

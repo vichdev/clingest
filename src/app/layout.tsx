@@ -1,11 +1,12 @@
+import "./globals.css";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import StyledJsxRegistry from "@/styles/GlobalStyles";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Clin gest",
-  description: "Created by Victor Hugo",
+export const metadata: Metadata = {
+  title: "Clingest",
+  description: "Created with love by Victor Hugo",
 };
 
 export default function RootLayout({
@@ -15,9 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <StyledJsxRegistry>{children}</StyledJsxRegistry>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
