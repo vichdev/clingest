@@ -1,9 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { Card, CardHeader, CardTitle } from "@/components/ui/card";
-import camed from "@/assets/camed.png";
-import brasdesco from "@/assets/brasdesco.png";
-import fusex from "@/assets/fusex.png";
 import { planos } from "@/components/Planos/resources/planos";
 
 const Planos: React.FC = () => {
@@ -16,7 +13,7 @@ const Planos: React.FC = () => {
       <CardHeader className="p-0 mb-2">
         <CardTitle>Planos</CardTitle>
       </CardHeader>
-      <div className="flex flex-row space-x-5">
+      <div className="flex flex-row space-x-5 flex-wrap items-start">
         {planos.length > 0 &&
           planos.map((plano) => {
             return (

@@ -120,7 +120,7 @@ const RegisterForm: React.FC = () => {
   }
 
   return (
-    <Card className="shadow-lg h-full w-full max-w-xl flex flex-col p-5 justify-between">
+    <Card className="xxl:shadow-lg xxl:border-2 h-full w-full xxl:max-w-xl flex flex-col p-5 justify-between m-auto max-w-[600px] shadow-none border-none">
       <CardContent>
         <CardHeader className="p-0 mb-5">
           <CardTitle>Agendar</CardTitle>
@@ -167,18 +167,18 @@ const RegisterForm: React.FC = () => {
                 </FormItem>
               )}
             />
-            <div className="flex flex-row gap-2">
+            <div className="flex flex-col gap-2 xs:flex-row">
               <FormField
                 control={form.control}
                 name="local"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="w-full xs:w-auto">
                     <FormLabel>Local de atendimento</FormLabel>
                     <Select
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                     >
-                      <SelectTrigger className="w-[180px]">
+                      <SelectTrigger className=" w-full xs:w-[180px]">
                         <SelectValue placeholder="Selecione o local" />
                       </SelectTrigger>
                       <SelectContent>
@@ -204,7 +204,7 @@ const RegisterForm: React.FC = () => {
                 name="data"
                 rules={{ required: true }}
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="w-full">
                     <FormLabel>Data e hora</FormLabel>
                     <Popover>
                       <PopoverTrigger asChild className="w-full">

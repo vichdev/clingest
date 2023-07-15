@@ -7,11 +7,11 @@ import RegisterForm from "@/components/Form";
 const Home: React.FC = () => {
   return (
     <div className="flex flex-row h-screen items-center justify-between">
-      <div className="w-full flex flex-row items-center justify-center">
+      <div className="w-full flex-row items-center justify-center hidden xxl:flex">
         <Image
           src={calendar}
           alt="Mulher marcando datas em seu caléndario"
-          className="w-6/12"
+          className="w-6/12 "
         />
       </div>
       <RegisterForm />
