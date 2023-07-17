@@ -226,6 +226,7 @@ const RegisterForm: React.FC = () => {
                           weekStartsOn={6}
                           initialFocus
                           selected={field.value}
+                          //@ts-ignore
                           onSelect={field.onChange}
                           footer={dateFooter}
                           disabled={[
